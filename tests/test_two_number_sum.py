@@ -42,11 +42,15 @@ class TwoNumberSumTestCase(unittest.TestCase):
 
     def test_case_9(self):
         output = two_number_sum.two_number_sum([-21, 301, 12, 4, 65, 56, 210, 356, 9, -47], 164)
-        self.assertEqual(output, None)
+        self.assertEqual(output, [])
 
     def test_case_10(self):
         output = two_number_sum.two_number_sum([3, 5, -4, 8, 11, 1, -1, 6], 15)
-        self.assertEqual(output, None)
+        self.assertEqual(output, [])
+
+    def test_performance(self):
+        output = sorted(two_number_sum.two_number_sum(list(range(1020)), 1003))
+        self.assertEqual(output, [501, 502])
 
     def tearDown(self):
         print(f'\ttest(): Finished in {time.time() - self.start_time}')

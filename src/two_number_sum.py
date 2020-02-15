@@ -3,9 +3,9 @@ Write a function that takes in a non-empty list of distinct integers and an inte
 as arguments.
 
 If any two numbers in the input array sum up to the target sum,
-the function should return them as tuples.
+the function should return them as list.
 
-If no two numbers adds to target sum, the function should return None.
+If no two numbers adds to target sum, the function should return Empty List..
 If there are more than two numbers, return any two numbers pair.
 """
 

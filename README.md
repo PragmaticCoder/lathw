@@ -2,4 +2,4 @@
 
 ## Run all tests
 
-`python unittest -m`
+`pytest`

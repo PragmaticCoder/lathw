@@ -7,11 +7,24 @@ the function should return them as list.
 
 If no two numbers adds to target sum, the function should return Empty List..
 If there are more than two numbers, return any two numbers pair.
+
+For example:
+[1, 22, 4, 5, 7] 6 => [1, 5]
+x + y = 6
+y = 6 - x
 """
 
 
 def two_number_sum(nums, target_sum):
-    pass
+    hashtable = {}
+    for num in nums:
+        match = target_sum - num
+        if match in hashtable:
+            return [match, num]
+        else:
+            hashtable[num] = True
+
+    return []
 
 
 def main():
